@@ -1,0 +1,19 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+tmpfs		/tmp	tmpfs	nodev,nosuid	0	0
+# UUID=11b79616-8eb0-41ad-abb2-f2d05b58b6d2
+/dev/sdb2           	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# UUID=e186d69f-7bf6-4f3f-bf63-054e5d01b92b
+/dev/sdb3           	/var      	ext4      	rw,relatime,data=ordered	0 2
+
+# UUID=34dc0df7-df56-4de3-88c6-4984db50949d
+/dev/sdb4           	/home     	ext4      	rw,relatime,data=ordered	0 2
+
+/dev/sdf1       /mnt/Slutihose  ntfs-3g uid=dragon840,gid=users,relatime 0 0
+/dev/sdc1       /mnt/TheNSide   ntfs-3g uid=dragon840,gid=users,relatime 0 0
+/dev/sda1       /mnt/ClusterFux ntfs-3g uid=dragon840,gid=users,relatime 0 0
+/dev/sdb1       /mnt/Dumpster   ntfs-3g uid=dragon840,gid=users,relatime 0 0
+
